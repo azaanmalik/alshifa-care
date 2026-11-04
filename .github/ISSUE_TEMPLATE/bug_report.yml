@@ -1,0 +1,23 @@
+name: Bug report
+description: Report a reproducible website issue (do not include patient data or secrets)
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: issue
+    attributes:
+      label: What happened?
+      description: Describe the issue without private information.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Reproduction steps
+      description: Include safe steps, expected behavior, and actual behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Browser and device
