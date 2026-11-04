@@ -52,7 +52,9 @@ flowchart LR
 ├── netlify.toml              # Static hosting and security headers
 ├── assets/                   # Self-hosted responsive SVG imagery and favicon
 ├── supabase/schema.sql       # Review table and RLS policies
+├── docs/ARCHITECTURE.md      # Component and data flow diagrams
 ├── docs/DEPLOYMENT.md        # Netlify deployment and review verification
+├── docs/PRIVACY.md           # Review data handling recommendations
 ├── docs/SECURITY.md          # Public keys, privacy and moderation
 └── .github/workflows/validate.yml # Automated static checks
 ```
@@ -77,7 +79,7 @@ Open `http://localhost:8000`. Internet access is required for externally hosted 
 
 The supplied archive already contains a browser publishable key and project URL. These are designed to be public; keep private keys and administrative credentials outside this repository.
 
-For detailed steps see [deployment and testing](docs/DEPLOYMENT.md) and [security notes](docs/SECURITY.md).
+For detailed steps see [deployment and testing](docs/DEPLOYMENT.md), [architecture](docs/ARCHITECTURE.md), [security notes](SECURITY.md), and [privacy guidance](docs/PRIVACY.md).
 
 ## Deployment
 
