@@ -14,9 +14,13 @@
 
 ## Overview
 
-AlShifa Care is a mobile-friendly clinic information website for Hijama (cupping), homeopathic consultations, and wellness services. The original green/teal visual identity, Urdu content, and WhatsApp booking links are retained. The repository includes lightweight self-hosted SVG illustrations for reliable rendering; the original supplied image files are kept in the owner's source archive. The frontend is **plain HTML, CSS and JavaScript**, hosted as static files on Netlify. A Supabase-backed reviews section allows visitors to submit reviews that appear publicly **only after approval**.
+AlShifa Care is a mobile-friendly clinic information website for Hijama (cupping), homeopathic consultations, and wellness services. The original green/teal visual identity, Urdu content, and WhatsApp booking links are retained. The repository includes the original supplied PNG/JPG photographs alongside optional SVG illustrations. The website references the original images. The frontend is **plain HTML, CSS and JavaScript**, hosted as static files on Netlify. A Supabase-backed reviews section allows visitors to submit reviews that appear publicly **only after approval**.
 
 > **Live website:** The existing Netlify deployment URL was not included in the source archive. Add the verified URL here after confirming it. Do not confuse this repository with the hosted deployment.
+
+## License
+
+Licensed under the [MIT License](LICENSE). Copyright © 2026 Muhammad Azaan Malik. Third-party images, fonts, icons, and other assets remain subject to their respective rights and licenses.
 
 ## Highlights
 
