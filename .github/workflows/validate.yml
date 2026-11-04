@@ -1,0 +1,31 @@
+name: Validate static website
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate JavaScript syntax
+        run: |
+          node --check script.js
+          node --check reviews.js
+          node --check review-config.js
+      - name: Verify required static files and integration
+        run: |
+          python - <<'PYTEST'
+          from pathlib import Path
+          html=Path('index.html').read_text(encoding='utf-8')
+          for name in ['styles.css','script.js','reviews.js','review-config.js','assets/favicon.svg','supabase/schema.sql']:
+              assert Path(name).is_file(), f'Missing {name}'
+          assert html.index('supabase-js@2') < html.index('review-config.js') < html.index('reviews.js') < html.rindex('</body>')
+          assert 'id="reviewGrid"' in html and 'id="patientReviewForm"' in html
+          print('Static website checks passed')
+          PYTEST
