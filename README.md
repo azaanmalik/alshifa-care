@@ -1,5 +1,8 @@
 <div align="center">
 
+![AlShifa Care — emerald wellness identity](docs/banner.svg)
+
+
 # 🌿 AlShifa Care
 ### Hijama • Homeopathy • Wellness
 
@@ -11,7 +14,7 @@
 
 ## Overview
 
-AlShifa Care is a mobile-friendly clinic information website for Hijama (cupping), homeopathic consultations, and wellness services. The original green/teal visual identity, Urdu content, imagery and WhatsApp booking links are retained. The frontend is **plain HTML, CSS and JavaScript**, hosted as static files on Netlify. A Supabase-backed reviews section allows visitors to submit reviews that appear publicly **only after approval**.
+AlShifa Care is a mobile-friendly clinic information website for Hijama (cupping), homeopathic consultations, and wellness services. The original green/teal visual identity, Urdu content, and WhatsApp booking links are retained. The repository includes lightweight self-hosted SVG illustrations for reliable rendering; the original supplied image files are kept in the owner's source archive. The frontend is **plain HTML, CSS and JavaScript**, hosted as static files on Netlify. A Supabase-backed reviews section allows visitors to submit reviews that appear publicly **only after approval**.
 
 > **Live website:** The existing Netlify deployment URL was not included in the source archive. Add the verified URL here after confirming it. Do not confuse this repository with the hosted deployment.
 
@@ -47,7 +50,7 @@ flowchart LR
 ├── reviews.js                # Supabase review submissions and display
 ├── review-config.js          # Public Supabase browser configuration
 ├── netlify.toml              # Static hosting and security headers
-├── assets/                   # Optimized brand and website imagery
+├── assets/                   # Self-hosted responsive SVG imagery and favicon
 ├── supabase/schema.sql       # Review table and RLS policies
 ├── docs/DEPLOYMENT.md        # Netlify deployment and review verification
 ├── docs/SECURITY.md          # Public keys, privacy and moderation
