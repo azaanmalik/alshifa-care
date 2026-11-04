@@ -1,0 +1,16 @@
+name: Feature request
+description: Suggest an improvement while keeping existing booking and reviews behavior
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: value
+    attributes:
+      label: Requested improvement and user value
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Compatibility and privacy considerations
+      description: Explain the effects on the existing Netlify site and moderated Supabase reviews.
