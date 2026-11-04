@@ -1,0 +1,9 @@
+# Secrets and local files
+.env
+.env.*
+!.env.example
+node_modules/
+.netlify/
+.DS_Store
+Thumbs.db
+*.log
